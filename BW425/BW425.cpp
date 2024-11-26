@@ -40,7 +40,7 @@ int main()
     //SetConsoleCP(1251);
     srand(time(NULL));
 
-  
+  //Изменение для комита...
     
     return 0;
 }
