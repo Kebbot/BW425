@@ -2,34 +2,12 @@
 #include <iostream>
 #include <windows.h>
 #include <string>
-#include <fstream>
 #include <cmath>
 #include <io.h>
-#include "Header.h"
+#include <vector>
 using namespace std;
 
-struct Human
-{
-    int* countHead;
-};
 
-void setHead(int*& name, int size)
-{
-    name = new int[size];
-    for (int i = 0; i < size; i++)
-    {
-        name[i] = 1;
-    }
-}
-
-void setHead(Human& name, int size)
-{
-    name.countHead = new int[size];
-    for (int i = 0; i < size; i++)
-    {
-        name.countHead[i] = 1;
-    }
-}
 
 
 int main()
@@ -40,7 +18,35 @@ int main()
     //SetConsoleCP(1251);
     srand(time(NULL));
 
-  //Изменение для комита...
+    vector<vector<int>> ver2;
+    int size = 2 + rand() % (15 - 2);
+    /*for (int i = 0; i < size; i++)
+    {
+        ver2.push_back({});
+    }*/
+    for (int i = 0; i < size/*ver2.size()*/; i++)
+    {
+        ver2.push_back({});
+        int tmpSize = 2 + rand() % (15 - 2);
+        for (int j = 0; j < tmpSize; j++)
+        {
+            int tmp = 1 + rand() % (100 - 1);
+            ver2[i].push_back(tmp);
+        }
+    }
+    for (int i = 0; i < ver2.size(); i++)
+    {
+        for (int j = 0; j < ver2[i].size(); j++)
+        {
+            cout << ver2[i][j] << ' ';
+        }
+        cout << endl;
+    }
+    
+    
+ 
+
+    
     
     return 0;
 }
