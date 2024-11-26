@@ -40,15 +40,7 @@ int main()
     //SetConsoleCP(1251);
     srand(time(NULL));
 
-    Human humanH;
-    int size = 5;
-    //setHead(humanH.countHead, size);
-    setHead(humanH, size);
-    for (int i = 0; i < size; i++)
-    {
-       cout << humanH.countHead[i] << " ";
-    }
-    cout << endl;
+  
     
     return 0;
 }
