@@ -18,13 +18,14 @@ int main()
     //SetConsoleCP(1251);
     srand(time(NULL));
 
+    
     vector<vector<int>> ver2;
     int size = 2 + rand() % (15 - 2);
-    /*for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         ver2.push_back({});
-    }*/
-    for (int i = 0; i < size/*ver2.size()*/; i++)
+    }
+    for (int i = 0; i < size; i++)
     {
         ver2.push_back({});
         int tmpSize = 2 + rand() % (15 - 2);
@@ -42,11 +43,6 @@ int main()
         }
         cout << endl;
     }
-    
-    
- 
 
-    
-    
     return 0;
 }
